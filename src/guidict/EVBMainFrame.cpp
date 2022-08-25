@@ -60,7 +60,7 @@ EVBMainFrame::EVBMainFrame(const TGWindow* p, UInt_t w, UInt_t h) :
 	NameFrame->AddFrame(ScalerFrame, fhints);
 
 	TGHorizontalFrame *WindowFrame = new TGHorizontalFrame(InputFrame, w, h*0.1);
-	TGLabel *slowlabel = new TGLabel(WindowFrame, "Slow Coincidence Window (ps):");
+	TGLabel *slowlabel = new TGLabel(WindowFrame, "Slow Coincidence Window (ns):");
 	fSlowWindowField = new TGNumberEntryField(WindowFrame, SLOWWIND, 0, TGNumberEntry::kNESReal, TGNumberEntry::kNEANonNegative);
 	TGLabel *buflabel = new TGLabel(WindowFrame, "Buffer Size (hits):");
 	fBufferSizeField = new TGNumberEntryField(WindowFrame, BUFSIZE, 200000, TGNumberEntry::kNESInteger, TGNumberEntry::kNEANonNegative);
